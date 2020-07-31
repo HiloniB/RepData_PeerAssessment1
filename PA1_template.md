@@ -35,7 +35,7 @@ hist(Steps_Day$StepsPerDay, ylim = c(0,30),
      xlab = "Number of steps taken / day")
 ```
 
-![](image1)<!-- -->
+![](image1.png)<!-- -->
 
 Calculating the mean and median of the total number of steps taken per day:
 
@@ -74,7 +74,7 @@ plot(activity_pattern$interval,activity_pattern$perInterval, type='l',
      ylab = "Mean number of steps")
 ```
 
-![](image2)<!-- -->
+![](image2.png)<!-- -->
 
 The 5-minute interval, on average across all the days in the dataset, containing the maximum number of steps:
 
@@ -122,7 +122,7 @@ hist(Steps_Day_im$StepsPerDay, ylim = c(0,40),
      xlab = "Number of steps taken / day")
 ```
 
-![](image3)<!-- -->
+![](image3.png)<!-- -->
 
 ```r
 mean(Steps_Day_im$StepsPerDay)
@@ -171,7 +171,7 @@ p<-ggplot(data = week_avg, aes(interval,avgSteps, color=weekday))+
 p+facet_wrap(~weekday, nrow = 2)
 ```
 
-![](image4)<!-- -->
+![](image4.png)<!-- -->
 
 There is definitely a difference between the activity pattern in weekends and weekdays. On weekends, the activity starts at a later time interval and is more constant thorughout the day, compared to weekdays.  
 
